@@ -2,8 +2,10 @@ package com.example.demo
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories
 
 @SpringBootApplication
+@EnableJpaRepositories("com.example.demo.repositories")
 class DemoApplication
 
 fun main(args: Array<String>) {

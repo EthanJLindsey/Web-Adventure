@@ -1,0 +1,29 @@
+<html xmlns:th="http://www.thymeleaf.org" xmlns:tiles="http://www.thymeleaf.org">
+<head>
+    <title tiles:fragment="title">Sign Up</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<div tiles:fragment="content">
+    <form name="f" th:action="@{/authenticate/sign-up}" method="post">
+        <fieldset>
+            <h1>Sign Up</h1>
+            <div th:if="${param.error}" class="alert alert-error">
+                Username already exists.
+            </div>
+            <div th:if="${param.logout}" class="alert alert-success">
+                You have been logged out.
+            </div>
+            <input type="text" id="username" name="username" placeholder="Username"/><br>
+            <input type="password" id="password" name="password" placeholder="Password"/><br>
+            <input type="repassword" id="repassword" name="repassword" placeholder="Re-enter Password"/><br>
+            <div class="form-actions">
+                <button type="submit" class="btn">Sign up</button>
+            </div>
+            <b>Already a Member? </b>
+            <a href="/authenticate/login">Log in.</a>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
