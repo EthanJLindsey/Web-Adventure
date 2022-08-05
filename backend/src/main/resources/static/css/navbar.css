@@ -1,23 +1,28 @@
 .navbar {
-    list-style-type: none;
-    overflow:hidden;
-    background-image: linear-gradient(rgb(0, 58, 146), rgb(72, 22, 178));
-    width: 100%;
-    height: fit-content;
     margin: 0px;
     padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    list-style-type: none;
+    overflow:hidden;
+    width: 100%;
+    height: fit-content;
 }
 
 .navbar li a {
     display:inline;
     float: left;
-    padding: 10px;
+    padding: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
     font-size: 25;
-    color: rgb(255, 255, 255);
+    margin: 5px;
+    border-radius: 20px;
 }
 
 .navbar li a:hover {
-    background-color: rgb(64, 106, 108);
+    background-color: white;
+    color: darkslateblue;
 }
 
 .profpic {
